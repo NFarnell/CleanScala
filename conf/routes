@@ -1,3 +1,9 @@
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET        /assets/*file           controllers.Assets.versioned(path="/public", file: Asset)
+GET        /                       controllers.HomeController.index
+GET        /hello                  controllers.HomeController.hello
+GET        /help                   controllers.HomeController.help()
+GET        /read                   controllers.HomeController.read()
+GET        /write                  controllers.HomeController.write()
+GET        /body                   controllers.HomeController.body()
+GET        /files                  controllers.HomeController.files()
 
-      
